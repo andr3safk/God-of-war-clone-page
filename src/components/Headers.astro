@@ -10,7 +10,7 @@
     </div>
   
     <nav>
-      <ul class="flex text-sm [&>li>a]:inline-block text-white [&>li>a]:px-6 [&>li>a]:py-2 font-medium">
+      <ul class="flex text-sm [&>li>a]:inline-block text-white [&>li>a]:px-6 [&>li>a]:py-2 font-medium ">
         <li><a href="#">Descubre God Of War</a></li>
         <li><a href="#">Juegos</a></li>
         <li><a href="#">Detrás de escena</a></li>
@@ -30,15 +30,23 @@
     
   </header>
 
-  <section class="bg-black h-screen w-screen text-center relative overflow-hidden">
-    
-    <h1>Descubre God Of War</h1>
+  <section class="bg-black h-screen w-screen text-center relative overflow-hidden z-30">
+    <div class="z-30 relative h-full flex flex-col justify-between">
+ 
+      <header class="pt-56">
+        <h1 class="text-white text-6xl font-medium">Descubre God Of War</h1>
+        <p class="text-sm text-gray-300 py-3">Regresa la legendaria saga inspirada en las mitologías antiguas.</p>
+      </header>
 
-    <div class="absolute top-0 bottom-0">
-      <img src="../../public/img/Banner.webp" alt="">
+      <footer class="mb-20">
+        <a href="#" class="border-2 border-white bg-white/5 backdrop-blur-3xl rounded font-medium text-white text-sm px-12 py-2 hover:bg-white hover:text-black transition-colors">Más sobre God of War</a>
+      </footer>
+    </div>
+
+    <div class="absolute inset-0 z-10 opacity-60">
+      <img src="../../public/img/Banner.webp" alt="imagen" class="w-full h-full object-cover">
     </div>
   </section>
-  
-</main>
+
 
 
