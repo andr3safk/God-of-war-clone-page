@@ -2,24 +2,25 @@
 import BentoItem from './BentoItem.astro'
 ---
 <main class="bg-black/90 h-full w-full relative">
-  <div class="absolute opacity-50">
+  <div class="fixed inset-0 opacity-50">
     <img src="../../public/img/Fondo-juegos.jpg" alt="imagen" class="w-screen h-full object-cover">
   </div>
   
  
-  <section class="w-full max-w-[1550px] grid grid-cols-10 auto-rows-[30rem] gap-3 mx-auto p-20">
+  <section class="w-full max-w-[1500px] grid grid-cols-11 auto-rows-[25rem] gap-4 mx-auto p-24">
   
-    <BentoItem class="col-span-6" 
+    <BentoItem class='col-span-6' 
     title="God of War Ragnarök" 
     subtitle="Lanzamiento original: PS5, PS4">
 
       <div
-      slot="image"
-      class="absolute left-0 top-0 bottom-0
-      h-full group-hover:scale-110
-      transition-scale duration-1000 ease-in-out opacity-90
-      bg-center bg-cover bg-no-repeat"
-      style="background-image: url('../../public/img/god-of-war-ragnarok.webp');"/>
+        slot="image"
+        class="absolute left-0 top-0 bottom-0 w-full
+        h-full group-hover:scale-105
+        transition-scale duration-1000 ease-in-out opacity-90
+        bg-blen-luminosity bg-center bg-cover bg-no-repeat bg-blue-950 -z-10"
+        style="background-image: url('../../public/img/god-of-war-ragnarok.webp');">
+      </div>
 
       <p slot="content" class="max-w-xl">
         Lanzado el <strong>9 de noviembre de 2022</strong>, Santa Monica Studio trae la <strong>secuela del aclamado God of War (2018)</strong>. Kratos y Atreus deben viajar por cada uno de los Nueve Reinos en busca de respuestas, mientras se preparan para <strong>la batalla profetizada que acabará con el mundo.</strong> 
@@ -28,31 +29,123 @@ import BentoItem from './BentoItem.astro'
 
     <BentoItem class="col-span-4" 
     title="God of War" 
-    subtitle="Lanzamiento original: PS4"/>
+    subtitle="Lanzamiento original: PS4">
+
+      <div
+        slot="image"
+        class="absolute left-0 top-0 bottom-0 w-full
+        h-full group-hover:scale-105
+        transition-scale duration-1000 ease-in-out opacity-90
+        bg-blen-luminosity bg-center bg-cover bg-no-repeat bg-blue-950 -z-10"
+        style="background-image: url('../../public/img/god-of-war-2018.webp');">
+      </div>
+
+      <p slot="content" class="max-w-xl">
+        Lanzado en <strong>2018</strong>, de la mano de Santa Monica Studio y del <strong>director creativo Cory Barlog</strong> llega un nuevo comienzo para <strong>God of War.</strong> Ahora, mientras vive como un hombre fuera de la sombra de los dioses, Kratos debe adaptarse a <strong>tierras desconocidas</strong>,y a una <strong>segunda oportunidad de ser padre.</strong>
+      </p>
+    </BentoItem>
 
     <BentoItem class="col-span-4" 
     title="God of War: Ascension" 
-    subtitle="Lanzamiento original: PS3"/>
+    subtitle="Lanzamiento original: PS3">
+      <div
+        slot="image"
+        class="absolute left-0 top-0 bottom-0 w-full
+        h-full group-hover:scale-105
+        transition-scale duration-1000 ease-in-out opacity-90
+        bg-blen-luminosity bg-center bg-cover bg-no-repeat bg-blue-950 -z-10"
+        style="background-image: url('../../public/img/god-of-war-ascension.webp');">
+      </div>
+
+      <p slot="content" class="max-w-xl">
+        Lanzado en <strong> 2013</strong>, God of War: Ascension funciona como otra precuela de la serie. Se sitúa <strong>diez años antes</strong> de los eventos del God of War original. Poco después de que Kratos <strong>fuera engañado por Ares</strong> para matar a su familia, jura vengarles y <strong>renuncia al juramento de sangre</strong> que hizo sobre servir al Dios de la Guerra.
+      </p>
+    </BentoItem>
 
     <BentoItem class="col-span-6" 
     title="God of War: Fantasma de Esparta" 
-    subtitle="Lanzamiento original: PSP"/>
+    subtitle="Lanzamiento original: PSP">
+      <div
+        slot="image"
+        class="absolute left-0 top-0 bottom-0 w-full
+        h-full group-hover:scale-105
+        transition-scale duration-1000 ease-in-out opacity-90
+        bg-blen-luminosity bg-center bg-cover bg-no-repeat bg-blue-950 -z-10"
+        style="background-image: url('../../public/img/god-of-war-fantasma-esparta.webp');">
+      </div>
+
+      <p slot="content" class="max-w-xl">
+        Lanzado en <strong>2010</strong>, God of War: Fantasma de Esparta está ambientado <strong>después de los acontecimientos del juego original</strong> de PlayStation 2, y revela los contratiempos y la <strong>historia de Kratos.</strong>
+      </p>
+    </BentoItem>
 
     <BentoItem class="col-span-6" 
     title="God of War III" 
-    subtitle="Lanzamiento original: PS3"/>
+    subtitle="Lanzamiento original: PS3">
+      <div
+        slot="image"
+        class="absolute left-0 top-0 bottom-0 w-full
+        h-full group-hover:scale-105
+        transition-scale duration-1000 ease-in-out opacity-90
+        bg-blen-luminosity bg-center bg-cover bg-no-repeat bg-blue-950 -z-10"
+        style="background-image: url('../../public/img/god-of-war-3.webp');">
+      </div>
+
+      <p slot="content" class="max-w-xl">
+        Lanzado en <strong>2010</strong>, La historia de God of War III es la <strong>épica conclusión de la trilogía griega</strong> de Kratos, quien busca acabar con el dominio de los dioses de una vez por todas. Enfrentándose a probabilidades imposibles y a un <strong>elaborado plan,</strong> Kratos debe salir de las <strong>profundidades más oscuras del Hades</strong> para escalar las alturas del <strong>Monte Olimpo.</strong>
+      </p>
+    </BentoItem>
 
     <BentoItem class="col-span-4" 
     title="God of War: Chains of Olympus" 
-    subtitle="Lanzamiento original: PSP"/>
+    subtitle="Lanzamiento original: PSP">
+      <div
+        slot="image"
+        class="absolute left-0 top-0 bottom-0 w-full
+        h-full group-hover:scale-105
+        transition-scale duration-1000 ease-in-out opacity-90
+        bg-blen-luminosity bg-center bg-cover bg-no-repeat bg-blue-950 -z-10"
+        style="background-image: url('../../public/img/god-of-war-chains-of-olympus.webp');">
+      </div>
+
+      <p slot="content" class="max-w-xl">
+        Lanzado en el año <strong>2008</strong>, God of War: Chains of Olympus es una <strong>precuela de los dos primeros juegos de la serie,</strong> y está ambientada antes de que <strong>Kratos conociera la verdad</strong> de la traición de Ares. En <strong>God of War: Chains of Olympus,</strong> el mundo se sumerge en la oscuridad y los dioses se quedan sin poder. Como <strong>castigo por haber matado</strong> a sus seres más queridos.
+      </p>
+    </BentoItem>
 
     <BentoItem class="col-span-4" 
     title="God of War II" 
-    subtitle="Lanzamiento original: PS2"/>
+    subtitle="Lanzamiento original: PS2">
+      <div
+        slot="image"
+        class="absolute left-0 top-0 bottom-0 w-full
+        h-full group-hover:scale-105
+        transition-scale duration-1000 ease-in-out opacity-90
+        bg-blen-luminosity bg-center bg-cover bg-no-repeat bg-blue-950 -z-10"
+        style="background-image: url('../../public/img/god-of-war-2.webp');">
+      </div>
+
+      <p slot="content" class="max-w-xl">
+        Lanzado en <strong>2008</strong>, la <strong>secuela del God of War original</strong>, en God of War II, Kratos se sienta en su trono del Olimpo como el nuevo <strong>Dios de la Guerra,</strong> mucho más despiadado de lo que nunca fue Ares. <strong>Rechazado por los demás dioses</strong> por su <strong>brutalidad.</strong> 
+      </p>
+    </BentoItem>
 
     <BentoItem class="col-span-6" 
     title="God of War" 
-    subtitle="Lanzamiento original: PS2"/>
+    subtitle="Lanzamiento original: PS2">
+      <div
+        slot="image"
+        class="absolute left-0 top-0 bottom-0 w-full
+        h-full group-hover:scale-105
+        transition-scale duration-1000 ease-in-out opacity-90
+        bg-blen-luminosity bg-center bg-cover bg-no-repeat bg-blue-950 -z-10"
+        style="background-image: url('../../public/img/god-of-war.webp');">
+      </div>
+
+      <p slot="content" class="max-w-xl">
+        Lanzado en el año <strong>2005</strong>, Kratos, un <strong>ex guerrero espartano</strong>, se ve obligado a desatar el poder de los dioses al embarcarse en una despiadada <strong>búsqueda de venganza</strong> para destruir a Ares, el <strong>dios de la guerra.</strong> 
+      </p>
+    </BentoItem>
 
   </section>
 </main>
