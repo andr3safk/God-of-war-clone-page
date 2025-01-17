@@ -1,0 +1,58 @@
+---
+import BentoItem from './BentoItem.astro'
+---
+<main class="bg-black/90 h-full w-full relative">
+  <div class="absolute opacity-50">
+    <img src="../../public/img/Fondo-juegos.jpg" alt="imagen" class="w-screen h-full object-cover">
+  </div>
+  
+ 
+  <section class="w-full max-w-[1550px] grid grid-cols-10 auto-rows-[30rem] gap-3 mx-auto p-20">
+  
+    <BentoItem class="col-span-6" 
+    title="God of War Ragnarök" 
+    subtitle="Lanzamiento original: PS5, PS4">
+
+      <div
+      slot="image"
+      class="absolute left-0 top-0 bottom-0
+      h-full group-hover:scale-110
+      transition-scale duration-1000 ease-in-out opacity-90
+      bg-center bg-cover bg-no-repeat"
+      style="background-image: url('../../public/img/god-of-war-ragnarok.webp');"/>
+
+      <p slot="content" class="max-w-xl">
+        Lanzado el <strong>9 de noviembre de 2022</strong>, Santa Monica Studio trae la <strong>secuela del aclamado God of War (2018)</strong>. Kratos y Atreus deben viajar por cada uno de los Nueve Reinos en busca de respuestas, mientras se preparan para <strong>la batalla profetizada que acabará con el mundo.</strong> 
+      </p>
+    </BentoItem>
+
+    <BentoItem class="col-span-4" 
+    title="God of War" 
+    subtitle="Lanzamiento original: PS4"/>
+
+    <BentoItem class="col-span-4" 
+    title="God of War: Ascension" 
+    subtitle="Lanzamiento original: PS3"/>
+
+    <BentoItem class="col-span-6" 
+    title="God of War: Fantasma de Esparta" 
+    subtitle="Lanzamiento original: PSP"/>
+
+    <BentoItem class="col-span-6" 
+    title="God of War III" 
+    subtitle="Lanzamiento original: PS3"/>
+
+    <BentoItem class="col-span-4" 
+    title="God of War: Chains of Olympus" 
+    subtitle="Lanzamiento original: PSP"/>
+
+    <BentoItem class="col-span-4" 
+    title="God of War II" 
+    subtitle="Lanzamiento original: PS2"/>
+
+    <BentoItem class="col-span-6" 
+    title="God of War" 
+    subtitle="Lanzamiento original: PS2"/>
+
+  </section>
+</main>
