@@ -1,14 +1,17 @@
 ---
 import BentoItem from './BentoItem.astro'
 ---
-<main class="bg-black/90 h-full w-full relative z-">
+<main class="bg-black/90 h-full w-full relative z-0">
   <div class="fixed inset-0 opacity-50">
     <img src="../../public/img/Fondo-juegos.jpg" alt="imagen" class="w-screen h-full object-cover">
   </div>
   
- 
-  <section class="w-full max-w-[1500px] grid grid-cols-11 auto-rows-[25rem] gap-4 mx-auto p-24">
-  
+  <div class="z-40 relative">
+    <h2 class="text-white uppercase text-center text-5xl font-semibold pt-20">Explora la Serie god of War.</h2>
+  </div>
+
+  <section class="w-full max-w-[1500px] grid grid-cols-11 auto-rows-[25rem] gap-4 mx-auto p-20">
+
     <BentoItem class='col-span-6' 
     title="God of War Ragnarök" 
     subtitle="Lanzamiento original: PS5, PS4">
@@ -148,4 +151,4 @@ import BentoItem from './BentoItem.astro'
     </BentoItem>
 
   </section>
-</main>
+</main> 
