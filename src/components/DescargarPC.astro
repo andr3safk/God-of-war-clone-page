@@ -1,38 +1,61 @@
-<main>
-  <section class="bg-black h-screen w-screen relative">
+<section class="bg-black h-screen w-screen relative">
 
-    <div class="absolute inset-0 z-10">
-      <img src="../../public/img/Fondo-Play.webp" alt="Imagen de fondo PlayStation" class="w-screen h-screen object-cover">
+  <div class="absolute inset-0 z-10">
+    <img src="../../public/img/Fondo-Play.webp" alt="Imagen de fondo PlayStation" class="w-screen h-screen object-cover">
+  </div>
+
+  <div class="z-20 relative h-full">
+    <div class="grid grid-cols-2 h-full items-center px-24">
+      
+      <div class="text-white space-y-8">
+        <div class="space-y-4">
+          <h2 class="text-5xl font-bold uppercase">God Of War Para Pc.</h2>
+          <p class="text-lg max-w-xl text-gray-200">
+            La aventura de Kratos y Atreus de 2018 ya está disponible en Steam y Epic Games Store con una variedad de optimizaciones para jugadores de PC.
+          </p>
+        </div>
+
+        <div class="space-y-4">
+          <h3 class="text-2xl font-bold">Características para PC:</h3>
+          <ul class="space-y-2 text-gray-200">
+            <li class="flex items-center gap-2">
+              <span class="text-blue-400">•</span>
+              <span>Gráficos de alta fidelidad.</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="text-blue-400">•</span>
+              <span>Compatible con NVIDIA® DLSS y Reflex.</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="text-blue-400">•</span>
+              <span>Personalización de controles.</span>
+            </li>
+            <li class="flex items-center gap-2">
+              <span class="text-blue-400">•</span>
+              <span>Compatible con pantalla ancha panorámica.</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="pt-4">
+          <a href="#" class="inline-block border-2 border-white bg-white/10 rounded-full font-medium text-white px-8 py-3 hover:bg-white hover:text-black transition duration-200">
+            Más información
+          </a>
+        </div>
+      </div>
+
+      <div class="w-full h-full flex items-center justify-end">
+        <div class="w-full max-w-2xl aspect-video">
+          <lite-youtube
+            class="w-full h-full rounded-lg shadow-xl"
+            videoid="nLe6GIKmJLc">
+          </lite-youtube>
+        </div>
+      </div>
     </div>
-
-    <div class="z-20 relative text-white p-8 ">
-      <div>
-        <h2 class="uppercase text-4xl font-bold mb-4">God Of War Para PC</h2>
-        <p class="text-lg">La aventura de Kratos y Atreus de 2018 ya está disponible en Steam y Epic Games Store con una variedad de optimizaciones para jugadores de PC.</p>
-      </div>
-
-      <div>
-        <h3 class="text-2xl font-bold mb-2">Características para PC:</h3>
-        <ul class="list-disc list-inside">
-          <li><p>Gráficos de alta fidelidad.</p></li>
-          <li><p>Compatible con NVIDIA® DLSS y Reflex.</p></li>
-          <li><p>Personalización de controles.</p></li>
-          <li><p>Compatible con pantalla ancha panorámica.</p></li>
-        </ul>
-      </div>
-
-      <div class="max-w-2xl ">
-        <lite-youtube
-          class="shadow-2xl shadow-white/10 rounded-xl"
-          videoid="nLe6GIKmJLc">
-        </lite-youtube>
-      </div>
-
-      <a href="#" class="border-2 border-white bg-white/20 rounded-3xl font-medium text-gray-100 text-sm px-12 py-2 hover:bg-white hover:text-black transition-colors">Más Información.</a>
-    </div>
-  </section>
-</main>
+  </div>
+</section>
 
 <script>
-  import '@justinribeiro/lite-youtube'
+import '@justinribeiro/lite-youtube'
 </script>
