@@ -37,7 +37,7 @@ import Videos from './videos.astro'
       </div>
 
       <div class="flex lg:flex-row items-center gap-12 lg:gap-16">
-        <div class="w-full lg:w-2/5"> <!-- Cambié a 2/5 para hacer la imagen más grande -->
+        <div class="w-full lg:w-2/5">
           <div class="relative shadow-xl">
             <img 
               src="../../public/img/kratos-atreus.avif" 
@@ -70,25 +70,27 @@ import Videos from './videos.astro'
         </div>
       </div>
     </div>
+  </div>
 
-
-
-    <div class="flex flex-col md:flex-row justify-between gap-6 md:gap-10 mt-16">
-      <Videos
-        title="Sé un guerrero"
-        videoid="gOE2BVRCUkM"
-      />
-    
-      <Videos
-        title="Una saga nacida de las cenizas"
-        videoid="cA6oqhnr-Cg"
-      />
-    
-      <Videos
-        title="Panel Detrás del telón de God of War"
-        videoid="xaywNYhfwvg"
-      />
-    </div>
+  <div class="text-center">
+    <h2 class="z-10 relative text-white text-4xl font-semibold uppercase">Galeria God Of war</h2>
+  </div>
+  <div class="flex justify-between gap-4 relative z-10 p-14">
+    <Videos
+      title="Sé un guerrero"
+      videoid="gOE2BVRCUkM"
+    />
+  
+    <Videos
+      title="Una saga nacida de las cenizas"
+      videoid="cA6oqhnr-Cg"
+    />
+  
+    <Videos
+      title="Panel Detrás del telón de God of War"
+      videoid="xaywNYhfwvg"
+    />
+  </div>
     
 </section>
 

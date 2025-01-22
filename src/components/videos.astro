@@ -8,8 +8,11 @@ interface Props {
 const { title, videoid, class: className } = Astro.props;
 ---
 
-<lite-youtube 
-  videoid={videoid}
-  videotitle={title}
-  class={`${className} w-[400px] h-[250px] rounded-lg shadow-xl bg-black/75`}
-></lite-youtube>
+<div class={`flex flex-col items-center gap-4 p-4 rounded-lg bg-gray-900 hover:bg-gray-800`}>
+  <lite-youtube 
+    videoid={videoid}
+    videotitle={title}
+    class="w-[400px] h-[250px] rounded-lg"
+  ></lite-youtube>
+  <h2 class="text-white text-center font-semibold text-lg">{title}</h2>
+</div>
