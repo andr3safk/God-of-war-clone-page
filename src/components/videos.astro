@@ -1,0 +1,13 @@
+---
+interface Props{
+  class?: string
+  title:string
+}
+
+const {title} = Astro.props
+---
+
+<lite-youtube class={
+  `${Astro.props.class}
+  w-[400px] h-[250px] rounded-lg shadow-xl bg-black/75`
+}></lite-youtube>
