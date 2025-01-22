@@ -1,13 +1,15 @@
 ---
-interface Props{
-  class?: string
-  title:string
+interface Props {
+  class?: string;
+  title: string;
+  videoid: string;
 }
 
-const {title} = Astro.props
+const { title, videoid, class: className } = Astro.props;
 ---
 
-<lite-youtube class={
-  `${Astro.props.class}
-  w-[400px] h-[250px] rounded-lg shadow-xl bg-black/75`
-}></lite-youtube>
+<lite-youtube 
+  videoid={videoid}
+  videotitle={title}
+  class={`${className} w-[400px] h-[250px] rounded-lg shadow-xl bg-black/75`}
+></lite-youtube>
