@@ -2,10 +2,10 @@
 import Coleccion from './Coleccion.astro'
 ---
 
-<section class="absolute z-0 bg-black w-screen h-screen">
+<section class="absolute z-0 bg-black w-full min-h-screen">
   
-  <div class="absolute">
-    <img src="../../public/img/Fondo-extras.webp" alt="imagen de fondo color" class="w-screen h-screen object-cover">
+  <div class="absolute inset-0">
+    <img src="../../public/img/Fondo-extras.webp" alt="imagen de fondo color" class="w-full h-full object-cover">
   </div>
 
   <div class="relative z-30 text-center pt-20">
@@ -13,9 +13,60 @@ import Coleccion from './Coleccion.astro'
     <p class="mt-10 text-xl max-w-[690px] m-auto text-slate-200">Descubre más acerca del desarrollo de <strong>God of War Ragnarök</strong> y de God of War 2018 de parte de los creadores en <strong>Santa Monica Studio.</strong></p>
   </div>
 
-
-  <div>
+  <div class="flex max-w-[400px] z-30">
+    <Coleccion
+      description="God of War Ragnarök: La creación de la historia";
+      videoid="DRteonQv-uE"
+    />
     
+    <Coleccion
+      description="God of War Ragnarök: Combate y enemigos enaltecidos";
+      videoid="_pOv4ovN-dM"
+    />
+
+    <Coleccion
+      description="God of War Ragnarök: Diseñando personajes y criaturas";
+      videoid="aaYqazlUMOA"
+    />
+
+    <Coleccion
+      description="God Of War Ragnarök: Convirtiéndose en Kratos";
+      videoid="Xh91W_IkYDE"
+    />
+
+    <Coleccion
+      description="God of War Ragnarök: La accesibilidad de cerca";
+      videoid="en9Mic3eQ5Y"
+    />
+
+    <Coleccion
+      description="God Of War Ragnarök: Los dioses de la banda sonora";
+      videoid="P6wikNqYyTc"
+    />
+
+    <Coleccion
+      description="God Of War Ragnarök: La creación de un reino";
+      videoid="VnaKVkakcoo"
+    />
+
+    <Coleccion
+      description="primer video";
+      videoid=""
+    />
+
+    <Coleccion
+      description="primer video";
+      videoid=""
+    />
+
+    <Coleccion
+      description="primer video";
+      videoid=""
+    />
   </div>
 
 </section>
+
+<script>
+  import '@justinribeiro/lite-youtube'
+</script>

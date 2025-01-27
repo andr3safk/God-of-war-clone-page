@@ -1,0 +1,18 @@
+---
+interface Props {
+  class?: string;
+  description: string;
+  videoid: string;
+}
+
+const { description , videoid, class: className } = Astro.props;
+---
+
+<div class={`flex flex-col items-center gap-4 p-4 rounded-lg shadow-lg`}>
+  <lite-youtube 
+    videoid={videoid}
+    videoDescription={description}
+    class="w-[200px] h-[130px] rounded-lg"
+  ></lite-youtube>
+  <h2 class="text-slate-500 text-center font-semibold text-lg">{description}</h2>
+</div>
