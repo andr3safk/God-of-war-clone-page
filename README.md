@@ -41,3 +41,7 @@ npm run dev
 ```
 
 4. Abre [**http://localhost:4321**](http://localhost:4321/) en tu navegador y observa tus cambios.
+
+## Enlaces ⛓️
+
+- Iconos tomado de la web: [**iconos8.es**](https://iconos8.es)
