@@ -2,13 +2,13 @@
 const { title, content } = Astro.props;
 ---
 
-<div class="border-b border-gray-700">
-  <button class="accordion-header w-full flex justify-between items-center p-4 text-white bg-gray-900">
+<div class="border-b border-gray-600  ">
+  <button class="accordion-header w-full flex justify-between items-center p-4 text-white bg-[#2C3333]">
     <span>{title}</span>
     <span class="icon transition-transform duration-300">+</span>
   </button>
 
-  <div class="accordion-content max-h-0 overflow-hidden transition-all duration-300 bg-gray-800 text-white">
+  <div class="accordion-content max-h-0 overflow-hidden transition-all duration-300 bg-[#1F2937] text-white">
     <p class="p-4">{content}</p>
   </div>
 </div>

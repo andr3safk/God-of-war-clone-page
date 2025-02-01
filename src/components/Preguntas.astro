@@ -1,14 +1,31 @@
 ---
-import Acordeon from './Acordeon.astro'
+import Acordeon from "./acordeon.astro"
 ---
 
 
-<section class="bg-gradient-to-t from-[#272727] to-[#06060e] h-screen w-screen z-0 absolute text-white">
+<section class="bg-gradient-to-t from-[#272727] to-[#06060e] h-[80vh] w-screen z-0 absolute text-white">
 
-  <div class="z-30">
-    <div class="relative mt-20">
-      <h2 class="uppercase text-center text-5xl font-semibold">preguntas frecuentes sobre god of war</h2>
+  <div class="z-30 relative">
+    <h2 class="uppercase text-center text-5xl font-semibold mt-20">preguntas frecuentes sobre god of war</h2>
+
+    <div class="max-w-5xl mx-auto mt-16">
+      <Acordeon title="¿Cuánto tiempo se tarda en completar God of War (2018)?"
+      content="Dependiendo de la configuración de dificultad, el jugador promedio puede completar la historia principal tras 20-25 horas en total. Los jugadores que busquen completar todo el juego pueden esperar unas 40-50 horas de juego en total. Los jugadores deben disfrutar del juego a su propio ritmo, independientemente del tiempo indicado anteriormente."/>
+
+      <Acordeon title="¿Cuántos juegos de God of War hay en la serie?"
+      content="La franquicia God of War cuenta actualmente con 8 juegos en la serie, con otra entrega en preparación."/>
+
+      <Acordeon title="¿Dónde puedo encontrar consejos y trucos?"
+      content="Familiarízate con los fundamentos básicos del combate, explora la historia de este entorno legendario y echa un vistazo a los enemigos a los que te enfrentarás en la guía oficial de PlayStation para God of War. El director del juego, Cory Barlog, también tiene algunos consejos para enfrentar a algunas de las bestias más temibles de God of War en este video."/>
+
+      <Acordeon title="¿Cuándo saldrá el próximo God of War?"
+      content="God of War Ragnarök se lanzó el 9 de noviembre de 2022. Para obtener las últimas actualizaciones, ¡asegúrate de seguir a Santa Monica Studio en Twitter, Instagramy Facebook!"/>
+
+      <Acordeon title="¿Dónde puedo jugar God of War?"
+      content="God of War (2018) está disponible actualmente para las consolas PlayStation®4, PlayStation®5 y PC."/>
+
     </div>
+
   </div>
 
 </section>
