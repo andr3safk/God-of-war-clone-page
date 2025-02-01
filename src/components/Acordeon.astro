@@ -1,0 +1,53 @@
+---
+const { title, content } = Astro.props;
+---
+
+<div class="border-b border-gray-700">
+  <button class="accordion-header w-full flex justify-between items-center p-4 text-white bg-gray-900">
+    <span>{title}</span>
+    <span class="icon transition-transform duration-300">+</span>
+  </button>
+
+  <div class="accordion-content max-h-0 overflow-hidden transition-all duration-300 bg-gray-800 text-white">
+    <p class="p-4">{content}</p>
+  </div>
+</div>
+
+<script>
+  function setupAccordions() {
+    document.querySelectorAll('.accordion-header').forEach(button => {
+      button.addEventListener('click', (event) => {
+        const currentButton = event.currentTarget as HTMLButtonElement;
+        const content = currentButton.nextElementSibling as HTMLDivElement;
+        const icon = currentButton.querySelector(".icon") as HTMLElement | null;
+
+        document.querySelectorAll<HTMLDivElement>(".accordion-content").forEach((item) => {
+          if (item !== content && item instanceof HTMLElement) {
+            item.style.maxHeight = "";
+            const prevIcon = item.previousElementSibling?.querySelector(".icon") as HTMLElement | null;
+            if (prevIcon) {
+              prevIcon.textContent = "+";
+              prevIcon.style.transform = "rotate(0deg)";
+            }
+          }
+        });
+
+        if (content.style.maxHeight) {
+          content.style.maxHeight = "";
+          if (icon) {
+            icon.textContent = "+";
+            icon.style.transform = "rotate(0deg)";
+          }
+        } else {
+          content.style.maxHeight = `${content.scrollHeight}px`;
+          if (icon) {
+            icon.textContent = "−";
+            icon.style.transform = "rotate(180deg)";
+          }
+        }
+      });
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded', setupAccordions);
+</script>
